@@ -18,6 +18,7 @@ Create a store with an initial value:
 
 ```typescript
 import { createStore } from 'minimal-store';
+
 // Create a store with an initial value
 const countStore = createStore(0);
 ```
@@ -82,4 +83,4 @@ Updates the store's value using an updater function and notifies all subscribers
 MIT
 
 # Author
-@on1force
+[@on1force](https://github.com/on1force)
