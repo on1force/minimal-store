@@ -14,5 +14,5 @@
   },
   "keywords": ["store", "reactive", "typescript", "minimal"],
   "author": "ON1FORCE",
-  "license": "ISC"
+  "license": "MIT"
 }
