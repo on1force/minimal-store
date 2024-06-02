@@ -7,7 +7,7 @@ A simple reactive store system for managing state in TypeScript.
 Install the package using npm:
 
 ```sh
-npm install minimal-store
+npm install @on1force/minimal-store
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ npm install minimal-store
 Create a store with an initial value:
 
 ```typescript
-import { createStore } from 'minimal-store';
+import { createStore } from '@on1force/minimal-store';
 
 // Create a store with an initial value
 const countStore = createStore(0);
