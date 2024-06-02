@@ -33,12 +33,17 @@ type Store<T> = {
      * @param updater A function that receives the current value and returns the updated value.
      */
     update: (updater: Updater<T>) => void;
+    /**
+     * Gets the current value of the store.
+     * @returns The current value.
+     */
+    get: () => T;
 };
 /**
  * Creates a reactive store with an initial value.
  * @template T The type of the value managed by the store.
  * @param initialValue The initial value for the store.
- * @returns An object representing the store with subscribe, set, and update methods.
+ * @returns An object representing the store with subscribe, set, update, and get methods.
  */
 export declare function createStore<T>(initialValue: T): Store<T>;
 export {};

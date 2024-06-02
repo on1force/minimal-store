@@ -1,12 +1,11 @@
 "use strict";
-// src/index.ts
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createStore = void 0;
 /**
  * Creates a reactive store with an initial value.
  * @template T The type of the value managed by the store.
  * @param initialValue The initial value for the store.
- * @returns An object representing the store with subscribe, set, and update methods.
+ * @returns An object representing the store with subscribe, set, update, and get methods.
  */
 function createStore(initialValue) {
     let value = initialValue;
@@ -39,6 +38,11 @@ function createStore(initialValue) {
         value = updater(value);
         subscribers.forEach(subscriber => subscriber(value));
     };
-    return { subscribe, set, update };
+    /**
+     * Gets the current value of the store.
+     * @returns The current value.
+     */
+    const get = () => value;
+    return { subscribe, set, update, get };
 }
 exports.createStore = createStore;
