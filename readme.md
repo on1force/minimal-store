@@ -46,6 +46,13 @@ Use the update method to modify the value based on the current value:
 countStore.update(value => value + 1);
 ```
 
+### Getting the Current Value
+Get the current value directly:
+
+```typescript
+const currentValue = countStore.get();
+```
+
 ### Unsubscribing from a store
 
 Unsubscribe from changes to the store's value:
@@ -77,6 +84,11 @@ Sets the store's value and notifies all subscribers.
 Updates the store's value using an updater function and notifies all subscribers.
 
 - `updater` (Updater<T>): A function that receives the current value of the store and returns the new value.
+
+### `get(): T`
+Gets the current value of the store.
+
+Returns: The current value of the store.
 
 # License
 
