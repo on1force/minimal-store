@@ -1,0 +1,18 @@
+{
+  "name": "minimal-store",
+  "version": "1.0.0",
+  "description": "A simple reactive store system based on Svelte's store",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/on1force/minimal-store.git"
+  },
+  "keywords": ["store", "reactive", "typescript", "minimal"],
+  "author": "ON1FORCE",
+  "license": "ISC"
+}
