@@ -1,6 +1,6 @@
 {
   "name": "@on1force/minimal-store",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple reactive store system based on Svelte's store",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
